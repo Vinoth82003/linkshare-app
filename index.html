@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Share</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="contain">
+
+        <div class="header">
+            <div class="headnav">
+                <div class="appname"><i class="fas fa-link"></i> devlinks</div>
+            <div class="options">
+                <button type="button" class="navbtn  active linkbtn"><i class="fas fa-link"></i><span class="navName">links</span></button>
+                <button type="button" class="navbtn profile"><i class="fa fa-user-circle"></i>
+                    <span class="navName">Profile Details</span></button>
+            </div>
+            <div class="priv">
+                <button type="button" class="preview"><i class=" fas fa-eye"></i><span class="navName">Preview</span></button>
+            </div>
+            </div>
+        </div>
+
+        <div class="phcontainer">
+            <div class="phoutline">
+                <div class="phinline">
+                    <div class="phcam"></div>
+                    <div class="innerph">
+                        <div class="prof">
+                            <img src="" alt="" class="profimg">
+                        </div>
+                        <div class="dets">
+                            <h2 class="name"></h2>
+                            <p class="email"></p>
+                        </div>
+
+                        <div class="links">
+                            <ul class="linkul">
+                                <!-- <li class="link GitHub"><div class="name">GitHub</div></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="editer">
+
+            <div class="inner_editer">
+                <div class="head">
+                    <h2 class="headText">Customize your links</h2>
+                    <p class="text">add/edit/remove links below and then share all your profile with the world!</p>
+                </div>
+                <div class="addbtn">
+                    <button type="button" class="add">+ Add new link</button>
+                </div>
+                <div class="links_container">
+
+                </div>
+                <div class="save">
+                    <button type="button" class="nextbtn">next</button>
+                </div>
+            </div>
+
+            <!-- <div class="con"> -->
+                <div class="profContainer">
+                    <div class="head">
+                        <h2 class="headText">Profile Details</h2>
+                        <p class="text">Add your details to create a presonal touch to your profile.</p>
+                    </div>
+                    <div class="detailsBox">
+                        <div class="profimgInput inputField">
+                            <label for="profile">Profile picture</label>
+                            <input type="file" name="file" id="file">
+                            <span>image must be below 1024x1024px. <br>Use PNG, JPG or BMP format.</span>
+                        </div>
+                        <div class="inputField">
+                            <label for="fname">First name *</label>
+                            <div class="input"> <input type="text" name="fname" id="fname"></div>
+                        </div>
+                        <div class="inputField">
+                            <label for="fname">Last name *</label>
+                            <div class="input"> <input type="text" name="lname" id="lname"></div>
+                        </div>
+                        <div class="inputField">
+                            <label for="fname">Email</label>
+                            <div class="input"> <input type="email" name="email" id="email"></div>
+                        </div>
+                    </div>
+                    <div class="save">
+                        <button type="button" class="savebtn">save</button>
+                    </div>
+                </div>
+            <!-- </div> -->
+
+        </div>
+
+       <div class="previewContainer">
+          <div class="previewTop">
+            <div class="prevheader">
+                <button type="button" class="prevbtns back">Back to Editer</button>
+                <button type="button" class="prevbtns share">Share Link</button>
+            </div>
+          </div>
+
+          <div class="previewBox">
+            <div class="innerph">
+                <div class="pprof">
+                </div>
+                <div class="dets">
+                    <h2 class="pname"></h2>
+                    <p class="pemail"></p>
+                </div>
+
+                <div class="links">
+                    <ul class="linkul plinkul">
+                        <!-- <li class="link GitHub"><div class="name">GitHub</div></li> -->
+                    </ul>
+                </div>
+            </div>
+          </div>
+       </div>
+
+    </div>
+
+    <!-- js -->
+    <script src="script.js"></script>
+</body>
+</html>

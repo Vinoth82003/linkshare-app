@@ -1,0 +1,592 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.contain{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: absolute;
+    overflow-x: hidden;
+    background: #f4f4f4;
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40px;
+}
+
+.headnav{
+  position: absolute;
+  width: 96%;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.appname{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.navbtn{
+    padding: 6px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    background: none;
+    outline: none;
+}
+
+.navbtn.active{
+    background: rgb(206, 198, 246);
+    color: #0d1492;
+}
+
+.preview{
+  margin-right: 20px;
+  padding: 6px 20px;
+  border: 2px solid #5c60b6;
+  background: transparent;
+  color: #0d1492;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.editer{
+    width: 900px;
+    border-radius: 7px;
+    background: #fff;
+    height: 85%;
+    margin: 80px 0px 0px  0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headText{
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text{
+    color: #504f4f;
+}
+
+.inner_editer, .profContainer{
+    width:  95%;
+    height: 95%;
+}
+
+.addbtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add{
+    width: 100%;
+    border: 2px solid #0d1492;
+    background: none;
+    padding: 5px;
+    border-radius: 4px;
+    color: #0d1492;
+}
+
+.links_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.linkBox{
+    width: 100%;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: 10px 10px;
+}
+
+.linkBox label{
+    font-size: 12px;
+}
+
+.linkhead{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.platform, .boxlink{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    width: 98%;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+.boxlink input{
+    width: 98%;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+.save{
+    position: relative;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.nextbtn, .savebtn{
+    margin: 10px;
+    padding: 7px 20px;
+    text-transform: capitalize;
+    background: #2525c5;
+    color: #fff;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.linkremove{
+    cursor: pointer;
+}
+
+/* phone design */
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.phcontainer{
+    height: 85%;
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 30px 0px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.phoutline{
+    width: 330px;
+    border: 3px solid #ddd;
+    height: 98%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phinline{
+    width: 93%;
+    border: 3px solid #ddd;
+    height: 97%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.phcam{
+   width: 40%;
+   height: 40px;
+   border-left: 2px solid #ddd;
+   border-right: 2px solid #ddd;
+   border-bottom: 2px solid #ddd;
+   border-top: 2px solid transparent;
+   border-radius: 50px;
+   position: relative;
+   top: -3%;
+}
+
+.innerph{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.prof, .pprof{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #ddd;
+    margin-top: -90px;
+    border: 1px solid #2525c5;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dets{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -90px;
+}
+
+.links{
+    margin-top: -90px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkul{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    gap: 10px;
+}
+
+.link{
+    width: 100%;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+    background: #ddd;
+    font-size: 14px;
+}
+
+.GitHub{
+    background: #000;
+}
+
+.YouTube{
+    background: #f82828;
+}
+
+.Linkedin{
+    background: #3838fa;
+}
+
+
+/* phone design end */
+
+
+
+.profContainer{
+    display: none;
+    flex-direction: column;
+}
+
+.detailsBox{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.inputField{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profimgInput{
+    height: 100px;
+}
+
+.profimg{
+    min-height: 100%;
+    max-width: 100%;
+}
+
+label{
+    flex-basis: 30%;
+    width: 100%;
+    height: 100%;
+}
+
+.input{
+ flex-basis: 70%;
+ width: 80%;
+ height: 100%;
+ display: flex;
+ /* align-items: center; */
+ /* justify-content: center; */
+}
+
+input{
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+span{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+input[type='file']{
+    width:  120px;
+    height: 120px;
+}
+
+input.active{
+    box-shadow: 0px 0px 10px #2525c5;
+    border: 1px solid #2525c5;
+}
+
+.name{
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.prof img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.prof{
+    border: 2px solid #2525c5;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.previewContainer{
+    /* display: flex;
+     */
+     display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    z-index: 10;
+}
+
+.previewTop{
+    width: 100%;
+    height: 30%;
+    background: #5454ea;
+    border-radius: 0px 0px 30px 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+}
+
+.prevheader{
+    width: 96%;
+    background: #fff;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prevbtns{
+    padding: 10px 15px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.back{
+    /* padding: 6px 20px; */
+    border: 2px solid #4141a4;
+    background: transparent;
+    color: #4141a4;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.share{
+    text-transform: capitalize;
+    background: #5454ea;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.previewBox{
+    position: absolute;
+    width: 300px;
+    height: 65%;
+    background: #fff;
+    box-shadow: 0px 0px 10px #000000;
+    border-radius: 10px;
+}
+
+.previewBox .innerph{
+    gap: 20px;
+}
+
+.previewBox .innerph .dets .pname {
+    font-size: 23px;
+    margin-top: 33px;
+}
+
+.plinkul{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.previewBox .innerph .pprof{
+    margin-top: -40px;
+}
+
+.fa-eye{
+    visibility: hidden;
+}
+
+.a{
+    width: 100%;
+}
+
+@media screen and (max-width:1000px) {
+    .name {
+        display: flex;
+        gap: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .email {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .linkul{
+        width: 96%;
+    }
+    
+}
+
+@media screen and (max-width:769px) {
+    .phcontainer{
+        display: none;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .fa-eye{
+        visibility: visible;
+    }
+    .navName{
+        display: none;
+    }
+
+    .options {
+        display: flex;
+        margin-right: 5px;
+    }
+    .headnav {
+        width: 100%;
+        display: flex;
+        flex-wrap:nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .appname {
+        margin-left: 20px;
+        font-size: 12px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    
+    .previewTop{
+        /* display: none; */
+        background: transparent;
+    }
+
+    .prevheader{
+        background: #e2e0e0 ;   
+     }
+
+     .prevbtns{
+        font-size: 12px;
+     }
+
+     .previewBox{
+        box-shadow: none;
+     }
+
+
+}
